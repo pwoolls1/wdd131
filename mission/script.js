@@ -1,3 +1,6 @@
+// Normal JS — no export / import
+console.log("script.js loaded"); // Debug line to make sure it's running
+
 let selectElem = document.querySelector('#themeSelect');
 
 selectElem.addEventListener('change', changeTheme);
