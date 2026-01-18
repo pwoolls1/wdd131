@@ -74,3 +74,8 @@ body.dark .byu,
 body.dark .idaho {
   color: #8ab4f8;
 }
+
+/* Smooth transition for dark/light mode */
+body, .page, h2, .byu, .idaho {
+  transition: background-color 0.5s ease, color 0.5s ease, border-color 0.5s ease;
+}
