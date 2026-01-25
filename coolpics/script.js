@@ -1,4 +1,3 @@
-// Mobile menu toggle
 const menuBtn = document.querySelector('.menu-btn');
 const navLinks = document.querySelector('.nav-links');
 
@@ -9,7 +8,6 @@ menuBtn.addEventListener('click', (e) => {
     navLinks.style.display === 'block' ? 'none' : 'block';
 });
 
-// Modal functionality
 const images = document.querySelectorAll('.gallery img');
 const modal = document.querySelector('.modal');
 const closeModalBtn = document.querySelector('.close-modal');
@@ -25,8 +23,6 @@ closeModalBtn.addEventListener('click', (e) => {
   console.log(e); // logs close button click
   closeModal();
 });
-
-
 
 function closeModal() {
   modal.classList.add('hidden');
