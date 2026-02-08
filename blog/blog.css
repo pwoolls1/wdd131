@@ -18,7 +18,6 @@ img {
   display: block;
 }
 
-/* Skip link for accessibility */
 .skip-link {
   position: absolute;
   top: -40px;
@@ -73,7 +72,7 @@ img {
   margin: 0 auto;
 }
 
-/* Book meta (left column on large screens) */
+
 .book-meta {
   text-align: center;
 }
