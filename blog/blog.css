@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Skip link for accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 0.5rem;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* ------------------
+   Header & Nav
+------------------ */
+
+.site-header {
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 2px solid #e3b27b;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.nav-list a {
+  color: #b30000;
+  text-decoration: none;
+}
+
+.nav-list a:hover,
+.nav-list a:focus {
+  text-decoration: underline;
+}
+
+/* ------------------
+   Grid Layout
+------------------ */
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Book meta (left column on large screens) */
+.book-meta {
+  text-align: center;
+}
+
+/* Book review */
+.book-review {
+  text-align: center;
+}
+
+.book-review h2 {
+  color: #b30000;
+}
+
+/* ------------------
+   Footer
+------------------ */
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #e3b27b;
+  margin-top: 2rem;
+}
+
+/* ------------------
+   Larger Devices
+------------------ */
+
+@media (min-width: 768px) {
+  .content-grid {
+    grid-template-columns: 1fr 2fr;
+    align-items: start;
+  }
+
+  .book-meta {
+    text-align: right;
+    padding-right: 1rem;
+    border-right: 2px solid #e3b27b;
+  }
+
+  .book-review {
+    text-align: left;
+    padding-left: 1rem;
+  }
+}
