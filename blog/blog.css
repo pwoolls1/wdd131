@@ -98,7 +98,7 @@ img {
 @media (min-width: 768px) {
   .book {
     grid-template-columns: 1fr 2fr;
-    align-items: start;
+    align-items: center;
   }
 
   .book-meta {
