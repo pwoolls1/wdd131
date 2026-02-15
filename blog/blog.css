@@ -1,4 +1,4 @@
-
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -9,7 +9,7 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.6;
   color: #222;
-  background-color: #fff;
+  background: #fff;
 }
 
 img {
@@ -32,7 +32,7 @@ img {
 }
 
 /* ------------------
-   Header & Nav
+   Header
 ------------------ */
 
 .site-header {
@@ -60,49 +60,43 @@ img {
 }
 
 /* ------------------
-   Grid Layout
+   Main Layout
 ------------------ */
 
 .content-grid {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 3rem;
   padding: 2rem;
   max-width: 1000px;
   margin: 0 auto;
 }
 
+.book {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
 
 .book-meta {
   text-align: center;
+  font-size: 0.95rem;
 }
 
-/* Book review */
-.book-review {
-  text-align: center;
+.book-meta .date {
+  font-weight: bold;
 }
 
 .book-review h2 {
   color: #b30000;
+  margin-top: 0;
 }
 
 /* ------------------
-   Footer
------------------- */
-
-.site-footer {
-  text-align: center;
-  padding: 1rem;
-  border-top: 2px solid #e3b27b;
-  margin-top: 2rem;
-}
-
-/* ------------------
-   Larger Devices
+   Larger Screens
 ------------------ */
 
 @media (min-width: 768px) {
-  .content-grid {
+  .book {
     grid-template-columns: 1fr 2fr;
     align-items: start;
   }
@@ -114,7 +108,17 @@ img {
   }
 
   .book-review {
-    text-align: left;
     padding-left: 1rem;
   }
+}
+
+/* ------------------
+   Footer
+------------------ */
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  border-top: 2px solid #e3b27b;
+  margin-top: 2rem;
 }
