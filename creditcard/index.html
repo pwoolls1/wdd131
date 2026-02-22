@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Credit Card Checkout</title>
+  <link rel="icon" href="tfavicon.ico">
+  <link rel="stylesheet" href="styles.css"/>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+<header><h1>Checkout</h1></header>
+
+<main>
+  <section class="errors"></section>
+
+  <form id="creditCardForm">
+
+    <div class="card-container">
+
+      <!-- FRONT OF CARD -->
+      <div class="card-front">
+
+        <div class="total">TOTAL: $199</div>
+        <div class="chip">💳</div>
+        <label for="cardNumber">CARD NUMBER</label>
+        <input type="text" id="cardNumber" placeholder="1234123412341234" required>
+
+        <div class="row">
+          <div>
+            <label for="cardHolder">CARD HOLDER</label>
+            <input type="text" id="cardHolder" placeholder="John Doe" required>
+          </div>
+
+          <div id="cardExpiration">
+            <label id="expirationDate">EXPIRATION</label>
+            <input type="text" id="month" placeholder="MM" maxlength="2"
+              aria-labelledby="expirationDate" required>
+            <input type="text" id="year" placeholder="YY" maxlength="2"
+              aria-labelledby="expirationDate" required>
+          </div>
+        </div>
+
+       
+
+      </div>
+
+      <!-- BACK OF CARD -->
+      <div class="card-back">
+        <div class="stripe"></div>
+
+        <div class="cvc-area">
+          <label for="cvc">CVC/CVV</label>
+          <input type="text" id="cvc" placeholder="xxx" maxlength="3" required>
+        </div>
+      </div>
+
+    </div>
+
+    <button type="submit">Submit Payment</button>
+
+  </form>
+</main>
+</body>
+</html>
