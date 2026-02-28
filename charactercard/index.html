@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swamp Beast Diplomat</title>
+  <script src="script.js"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Swamp Beast Diplomat Character Card">
+  <meta property="og:description" content="An interactive JavaScript character card with attack and level up features.">
+  <meta property="og:url" content="https://yourwebsite.com/charactercard">
+  <meta property="og:image" content="images/swamp-beast.webp">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Swamp Beast Diplomat Character Card">
+  <meta name="twitter:description" content="An interactive JavaScript character card with attack and level up features.">
+  <meta name="twitter:image" content="images/swamp-beast.webp">
+
+  <!-- Favicon -->
+  <link rel="icon" href="zfavicon.ico">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="card">
+    <img src="images/swamp-beast.webp" alt="Swamp Beast Diplomat" class="image">
+
+    <div class="name" id="character-name">
+    Swamp Beast Diplomat
+    </div>
+
+    <div class="stats">
+    <p><strong>Class:</strong> <span id="character-class">Diplomat</span></p>
+    <p><strong>Level:</strong> <span id="character-level">1</span></p>
+    <p><strong>Health:</strong> <span id="character-health">100</span></p>
+    </div>
+    <div class="buttons">
+      <button onclick="character.attacked()">Attack</button>
+      <button onclick="character.levelUp()">Level Up</button>
+    </div>
+  </div>
+
+</body>
+</html>
