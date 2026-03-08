@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2 {
+  font-family: "Amatic SC", cursive;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin: 0.5em 0 0.2em;
+  color: #1e88e5;
+}
+
+header {
+  margin-bottom: 1.5em;
+}
+
+.site-branding {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.site-branding img {
+  width: 90px;
+}
+
+.search-section {
+  margin-bottom: 1.5em;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0.75em 0;
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+}
+
+.search-bar input {
+  flex: 1;
+  font-size: 1rem;
+  padding: 0.75em;
+  border: 1px solid #444;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+}
+
+.search-bar button {
+  border: 1px solid #444;
+  background: white;
+  padding: 0.5em 0.75em;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+}
+
+.search-bar button img {
+  width: 24px;
+  height: 24px;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 1em;
+}
+
+.recipe-image img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.recipe-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.tag {
+  display: inline-block;
+  align-self: flex-start;
+  border: 1px solid #777;
+  padding: 0.25em 0.5em;
+  margin: 0;
+  font-size: 0.9rem;
+  background: #f5f5f5;
+}
+
+.rating {
+  font-size: 1.2rem;
+}
+
+.description {
+  display: none;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+footer {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+}
+
+.social {
+  display: flex;
+  gap: 0.5em;
+}
+
+.social img {
+  width: 32px;
+  height: 32px;
+}
+
+footer a {
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 700px) {
+  .search-bar {
+    max-width: 100%;
+  }
+
+  .recipe-card {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .recipe-image {
+    flex: 0 1 320px;
+  }
+
+  .recipe-content {
+    flex: 1 1 60ch;
+  }
+
+  .description {
+    display: block;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+}
