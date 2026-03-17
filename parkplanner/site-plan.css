@@ -1,0 +1,19 @@
+:root {
+  --primary-color: #FFFFFF;
+  --secondary-color: #2EC4B6;
+  --accent1-color: #FF9F1C;
+  --accent2-color: #474350;
+
+  --heading-font: "Merriweather", serif;
+  --paragraph-font: "Open Sans", Arial, sans-serif;
+
+  --headline-color-on-white: #474350;
+  --headline-color-on-color: white;
+  --paragraph-color-on-white: #474350;
+  --paragraph-color-on-color: white;
+  --paragraph-background-color: #FF9F1C;
+  --nav-link-color: white;
+  --nav-background-color: #2EC4B6;
+  --nav-hover-link-color: #648e8a;
+  --nav-hover-background-color: #208278;
+}
