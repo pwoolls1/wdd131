@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ParkPlanner</title>
+  <meta name="description" content="Plan your next national park adventure with ParkPlanner." />
+  <link rel="icon" href="images/logo.png" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <link rel="icon" href="zfavicon.ico">
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header>
+    <div class="container header-layout">
+      <div class="top-bar">
+        <a class="brand" href="#home">
+          <img src="images/logo.png" alt="ParkPlanner logo" />
+          <span>ParkPlanner</span>
+        </a>
+        <button id="menu-button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      </div>
+
+      <nav id="primary-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#parks">Parks</a></li>
+          <li><a href="#planner">Trip Planner</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="hero-card">
+          <div class="hero-content">
+            <h1>Plan Your Next National Park Adventure</h1>
+            <p>
+              Explore popular parks, compare activities, and build a simple trip plan that matches
+              your interests. ParkPlanner helps you find places worth visiting without digging
+              through lots of different websites.
+            </p>
+            <a class="button" href="#parks">Start Planning</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container intro">
+        <h2 class="section-heading">Welcome to ParkPlanner</h2>
+        <p>
+          ParkPlanner is a simple trip planning website built for travelers, students, families,
+          and outdoor enthusiasts. It highlights a few popular national parks, shows useful travel
+          details, and lets visitors filter options based on activity, region, and difficulty.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-heading">Featured Parks</h2>
+        <div class="featured-grid" id="featured-parks"></div>
+      </div>
+    </section>
+
+    <section id="parks">
+      <div class="container">
+        <h2 class="section-heading">Parks Explorer</h2>
+        <div class="filter-panel">
+  <div class="filter-grid">
+    <div>
+      <label for="activity-filter">Activity</label>
+      <select id="activity-filter">
+        <option value="all">All Activities</option>
+        <option value="Hiking">Hiking</option>
+        <option value="Wildlife">Wildlife</option>
+        <option value="Camping">Camping</option>
+        <option value="Photography">Photography</option>
+        <option value="Scenic Views">Scenic Views</option>
+        <option value="Waterfalls">Waterfalls</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="region-filter">Region</label>
+      <select id="region-filter">
+        <option value="all">All Regions</option>
+        <option value="West">West</option>
+        <option value="Mountain">Mountain</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="difficulty-filter">Difficulty</label>
+      <select id="difficulty-filter">
+        <option value="all">All Difficulty Levels</option>
+        <option value="Easy">Easy</option>
+        <option value="Moderate">Moderate</option>
+        <option value="Hard">Hard</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="search-filter">Search by park name</label>
+      <input id="search-filter" type="text" placeholder="Type a park name" />
+    </div>
+  </div>
+
+  <div class="filter-actions">
+    <button class="button" id="search-button" type="button">Search Parks</button>
+    <button class="button secondary-button" id="reset-filters" type="button">Reset</button>
+  </div>
+
+  <p class="results-text" id="results-count">Showing 5 parks</p>
+</div>
+
+<div class="parks-grid" id="parks-grid"></div>
+      </div>
+    </section>
+
+    <section id="planner">
+      <div class="container">
+        <div class="planner-box">
+          <h2 class="section-heading">Trip Planner Tips</h2>
+          <p>
+            Use the park cards to compare activities and difficulty levels. If you are planning for
+            a family vacation, you may want easier trails and more scenic stops. If you want a more
+            active trip, look for hiking, climbing, and camping opportunities.
+          </p>
+          <div class="planner-grid" id="planner-grid"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <p><strong>ParkPlanner</strong> | National Park Trip Planner</p>
+      <p>
+        <a href="#home">Home</a> |
+        <a href="#parks">Parks</a> |
+        <a href="#planner">Trip Planner</a>
+      </p>
+      <p>&copy; <span id="year"></span> Parker Woolsey</p>
+    </div>
+  </footer>
+</body>
+</html>
